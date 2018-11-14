@@ -25,11 +25,25 @@
     <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".mainmenu-area" data-offset="90">
 
-    <header>
-        <div style=" position:fixed;!important; z-index: 9999999999;!important; width: 100%">
-            <div class="mainmenu-area is-sticky" id="mainmenu-area" style="background: #292929;!important; z-index: 9999999999;!important;">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--- PRELOADER -->
+    <div class="preeloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!--SCROLL TO TOP-->
+    <a href="#scroolup" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
+
+    <!--START TOP AREA-->
+    <header class="top-area" id="home">
+        <div class="header-top-area" id="scroolup">
+            <!--MAINMENU AREA-->
+            <div class="mainmenu-area team-mainmenu" id="mainmenu-area">
                 <div class="mainmenu-area-bg"></div>
                 <nav class="navbar">
                     <div class="container">
@@ -37,46 +51,44 @@
                             <a href="#home" class="navbar-brand" style="padding: 0"><img src="assets/img/logo.png" alt="logo"
                                     style="max-height:100%; max-width: 200px"></a>
                         </div>
-                        <div id="main-nav" class="stellarnav dark desktop"><a href="#" class="menu-toggle full"><i
-                                    class="fa fa-bars"></i> Menu</a>
+                        <div id="main-nav" class="stellarnav">
                             <ul id="nav" class="nav navbar-nav pull-right">
-                                <li class=""><a href="./index.html">Home</a></li>
-                                <li class=""><a href="./index.html#about">About Us</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html#about">About Us</a></li>
                                 <li class="active"><a href="#">Team</a></li>
-                                <li class="has-sub"><a href="#">For Students</a>
-                                    <ul style="display: none;">
-                                        <li class=""><a href="#">Sign In</a></li>
-                                        <li class=""><a href="#">Sign Up</a></li>
-                                        <li class=""><a href="#">Internship Policies</a></li>
-                                        <li class=""><a href="#">Preparation</a></li>
-                                        <li class=""><a href="#">Resume Guidelines</a></li>
+                                <li><a href="#">For Students</a>
+                                    <ul>
+                                        <li><a href="#">Sign In</a></li>
+                                        <li><a href="#">Sign Up</a></li>
+                                        <li><a href="#">Internship Policies</a></li>
+                                        <li><a href="#">Preparation</a></li>
+                                        <li><a href="#">Resume Guidelines</a></li>
                                     </ul>
-                                    <a class="dd-toggle" href="#"><i class="fa fa-plus"></i></a>
                                 </li>
-                                <li class="has-sub"><a href="#">For Startups</a>
+                                <li><a href="#">For Startups</a>
                                     <ul>
                                         <li><a href="#">Sign In</a></li>
                                         <li><a href="#">Sign Up</a></li>
                                         <li><a href="#">Terms and Conditions</a></li>
                                     </ul>
-                                    <a class="dd-toggle" href="#"><i class="fa fa-plus"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
+            <!--END MAINMENU AREA END-->
         </div>
     </header>
     <section class="blog-feed-area padding-top" id="team">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center wow fadeIn sm-padding20 xs-padding30 center">
+            <div class="row mb30 mt50">
+                <div class="col-12 text-center wow fadeIn center">
                     <h1>Team</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 col-lg-12   col-sm-12 col-xs-12 ">
+                <div class="col-12 ">
                     <div class="area-title text-center wow fadeIn">
                         <h3>Heads</h3>
                         <hr>
@@ -84,7 +96,7 @@
                 </div>
             </div>
             <div class="row center justify-content-center">
-                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <div class="col-md-4 col-lg-4 col-sm-6 col-11">
                     <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="blog-thumb">
                             <a href="#"><img src="assets/img/team/sourabh.jpg" alt=""></a>
@@ -102,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <div class="col-md-4 col-lg-4 col-sm-6 col-11">
                     <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="blog-thumb">
                             <a href="#"><img src="assets/img/team/viswadeep.jpg" alt=""></a>
@@ -273,7 +285,7 @@
             <br><br><br><br>
         </div>
 
-        <div class="panel-group" id="accordion">
+        <div class="panel-group mb50" id="accordion">
             <div class="panel panel-default">
 
                 <div class="row no-margin">
@@ -531,11 +543,13 @@
     <script src="assets/js/vendor/bootstrap.min.js"></script>
 
     <!--====== PLUGINS JS ======-->
-    <!-- <script src="assets/js/stellarnav.min.js"></script> -->
-    <!-- <script src="assets/js/jquery.sticky.js"></script> -->
+    <script src="assets/js/stellarnav.min.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/placeholdem.min.js"></script>
 
     <!--===== ACTIVE JS=====-->
-    <!-- <script src="assets/js/main.js"></script> -->
+    <script src="assets/js/team.js"></script>
 
 
 </body>
