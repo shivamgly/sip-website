@@ -81,14 +81,6 @@ ul#nav li a {
     background: transparent;
 }
 
-.mainmenu-area.team-mainmenu {
-    background: #292929;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: auto;
-}
-
 .is-sticky .mainmenu-area {
     background: #292929;
 }
@@ -313,6 +305,7 @@ ul#nav li ul a,
         float: none;
     }
     .navbar-header {
+        border-bottom: 1px solid #ffffff;
         margin: 0;
         padding: 15px 0;
     }
@@ -339,7 +332,7 @@ ul#nav li ul a,
         margin-top: 5px;
     }
     .mainmenu-area {
-        /* background: #272727 none repeat scroll 0 0; */
+        background: #272727 none repeat scroll 0 0;
     }
     ul#nav li a,
     .is-sticky ul#nav li a {
@@ -356,6 +349,7 @@ ul#nav li ul a,
 
 @media only screen and (max-width: 767px) {
     .navbar-header {
+        border-bottom: 1px solid #ffffff;
         margin: 0;
         padding: 15px 0;
     }
@@ -377,10 +371,11 @@ ul#nav li ul a,
     }
     .navbar-brand > img {
         margin-top: 2px;
+        ;
         width: 90%;
     }
     .mainmenu-area {
-        /* background: #272727 none repeat scroll 0 0; */
+        background: #272727 none repeat scroll 0 0;
     }
     ul#nav li a,
     .is-sticky ul#nav li a {
