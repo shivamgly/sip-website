@@ -1,6 +1,0 @@
-language: generic
-deploy:
-  provider: script
-  script: bash .travis_deploy.sh
-  on:
-    tags: false
